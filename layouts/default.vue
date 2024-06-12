@@ -1,7 +1,6 @@
 <script setup></script>
 <template>
-    <div>
-        <div>Coba 1</div>
+    <div class="bg-black h-screen">
         <slot />
     </div>
 </template>

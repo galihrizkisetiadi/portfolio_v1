@@ -9,7 +9,11 @@ export default {
         './nuxt.config.{js,ts}'
     ],
     theme: {
-        extend: {}
+        extend: {
+            fontFamily: {
+                bebas: ['Bebas Neue', 'sans-serif']
+            }
+        }
     },
     plugins: []
 };

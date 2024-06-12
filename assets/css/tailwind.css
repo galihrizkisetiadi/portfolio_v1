@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .title {
-        @apply text-3xl;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@layer base {
+    body {
+        @apply font-bebas;
     }
 }

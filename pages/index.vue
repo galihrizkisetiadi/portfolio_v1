@@ -7,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-    <div class="text-black">
+    <div class="text-white">
         Hai
         <CobaHai />
     </div>
