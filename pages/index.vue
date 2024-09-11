@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import CobaHai from '@/shareds/cobaHai.vue';
+import Navbar from '~/shareds/header/NavbarIndex.vue';
 
 definePageMeta({
-    layout: 'default'
+    layout: 'default',
+    colorMode: 'light',
 });
 </script>
 
 <template>
-    <div class="text-white">
-        Hai
-        <CobaHai />
+    <div class="h-screen">
+        <Navbar />
     </div>
 </template>
