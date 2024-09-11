@@ -8,4 +8,11 @@
     body {
         @apply font-bebas;
     }
+    .dark {
+        @apply bg-[#33372C];
+    }
+    .light {
+        @apply bg-[#FFE5CF];
+    }
 }
+@layer;

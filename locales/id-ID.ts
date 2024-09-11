@@ -1,3 +1,7 @@
 export default {
-    welcome: 'Selamat Datang',
+    welcome: 'id',
+    navbar: {
+        home: 'Beranda',
+        projects: 'Proyek',
+    },
 };

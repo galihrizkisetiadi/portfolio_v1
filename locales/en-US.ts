@@ -1,3 +1,7 @@
 export default {
-    welcome: 'Welcome',
+    welcome: 'en',
+    navbar: {
+        home: 'Home',
+        projects: 'Projects',
+    },
 };

@@ -3,7 +3,6 @@ import Navbar from '~/shareds/header/NavbarIndex.vue';
 
 definePageMeta({
     layout: 'default',
-    colorMode: 'light',
 });
 </script>
 

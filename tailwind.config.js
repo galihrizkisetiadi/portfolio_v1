@@ -5,6 +5,7 @@ export default {
         './components/**/*.{vue,js}',
         './layouts/**/*.vue',
         './pages/**/*.vue',
+        './shareds/**/*.vue',
         './plugins/**/*.{js,ts}',
         './nuxt.config.{js,ts}'
     ],
