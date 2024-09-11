@@ -11,6 +11,10 @@ const links: Array<{ label: string; to: string }> = [
         label: 'navbar.projects',
         to: '/projects',
     },
+    {
+        label: 'navbar.about',
+        to: '/about',
+    },
 ];
 </script>
 

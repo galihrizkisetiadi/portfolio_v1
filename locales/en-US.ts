@@ -3,5 +3,6 @@ export default {
     navbar: {
         home: 'Home',
         projects: 'Projects',
+        about: 'About Me',
     },
 };

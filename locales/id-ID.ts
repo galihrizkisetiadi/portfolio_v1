@@ -3,5 +3,6 @@ export default {
     navbar: {
         home: 'Beranda',
         projects: 'Proyek',
+        about: 'Tentang Saya',
     },
 };
