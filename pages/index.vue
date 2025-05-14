@@ -20,10 +20,10 @@ const colorMode = useColorMode();
             :class="[{ 'bg-white': colorMode.value === 'light' }, { 'bg-black': colorMode.value === 'dark' }]"
         >
             <Navbar />
-            <div class="flex h-[calc(88vh-7rem)] gap-8">
+            <div class="flex h-[calc(88vh-7rem)] gap-8 pr-[5rem]">
                 <SideBar />
 
-                <div class="flex w-full items-center pl-[20rem]">
+                <div class="flex w-full items-center pl-[20rem] xl:pl-[15rem]">
                     <div class="flex flex-col gap-16">
                         <div class="flex w-fit flex-col gap-2 text-8xl font-bold">
                             <h1>Galih</h1>

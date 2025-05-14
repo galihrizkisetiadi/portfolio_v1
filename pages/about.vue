@@ -80,7 +80,7 @@ const skills = [
             :class="[{ 'bg-white': colorMode.value === 'light' }, { 'bg-black': colorMode.value === 'dark' }]"
         >
             <Navbar />
-            <div class="flex h-[calc(88vh-7rem)] gap-8">
+            <div class="flex h-[calc(88vh-7rem)] gap-8 pr-[5rem]">
                 <SideBar />
 
                 <div class="flex w-full items-center pl-[10rem]">
