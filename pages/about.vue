@@ -83,7 +83,7 @@ const skills = [
             <div class="flex h-[calc(88vh-7rem)] gap-8">
                 <SideBar />
 
-                <div class="flex w-full items-center pl-[20rem]">
+                <div class="flex w-full items-center pl-[10rem]">
                     <div class="flex w-full gap-16">
                         <div class="flex flex-col gap-6">
                             <h1 class="text-xl font-semibold">Career</h1>
