@@ -19,7 +19,7 @@ const links: Array<{ label: string; to: string }> = [
 
 <template>
     <div
-        :class="['h-28 text-lg lg:text-3xl', 'flex items-center justify-end', 'bg-transparent', 'transition-colors duration-300']"
+        :class="['h-28 text-lg lg:text-3xl pr-4', 'flex items-center justify-end', 'bg-transparent', 'transition-colors duration-300']"
     >
         <div class="flex gap-2 lg:gap-8">
             <div v-for="(item, index) in links" :key="index" class="h-[40px]">
