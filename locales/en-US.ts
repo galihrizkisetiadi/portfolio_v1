@@ -9,4 +9,8 @@ export default {
     index: {
         desc: 'A motivated Full Stack Developer with solid experience in creating modern websites',
     },
+    about: {
+        career: 'Career',
+        skills: 'Skills'
+    }
 };

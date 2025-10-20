@@ -73,14 +73,14 @@ const skills = [
     <div class="flex w-full items-center pr-4 lg:pl-[10rem]">
         <div class="flex w-full flex-col gap-16 lg:flex-row">
             <div class="flex flex-col gap-6">
-                <h1 class="text-xl font-semibold">Career</h1>
+                <h1 class="text-xl font-semibold">{{ $t('about.careet') }}</h1>
                 <TimelineResume />
             </div>
 
             <USeparator orientation="vertical" class="hidden h-60 lg:visible" size="lg" />
 
             <div class="flex flex-col gap-6">
-                <h1 class="text-xl font-semibold">Skills</h1>
+                <h1 class="text-xl font-semibold">{{ $t('about.skills') }}</h1>
 
                 <div class="grid grid-cols-3 gap-1 lg:grid-cols-4 lg:gap-2">
                     <div

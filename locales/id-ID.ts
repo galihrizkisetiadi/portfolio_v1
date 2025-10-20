@@ -9,4 +9,8 @@ export default {
     index: {
         desc: 'Full Stack Developer termotivasi dengan pengalaman kokoh dalam membuat moderen website',
     },
+    about: {
+        career: 'Karir',
+        skills: 'Keterampilan',
+    },
 };
