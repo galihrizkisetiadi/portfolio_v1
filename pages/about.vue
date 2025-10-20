@@ -70,7 +70,7 @@ const skills = [
 </script>
 
 <template>
-    <div class="flex w-full items-center lg:pl-[10rem]">
+    <div class="flex w-full items-center pr-4 lg:pl-[10rem]">
         <div class="flex w-full flex-col gap-16 lg:flex-row">
             <div class="flex flex-col gap-6">
                 <h1 class="text-xl font-semibold">Career</h1>
@@ -82,11 +82,11 @@ const skills = [
             <div class="flex flex-col gap-6">
                 <h1 class="text-xl font-semibold">Skills</h1>
 
-                <div class="grid grid-cols-4 gap-2">
+                <div class="grid grid-cols-3 gap-1 lg:grid-cols-4 lg:gap-2">
                     <div
                         v-for="(skill, index) in skills"
                         :key="index"
-                        class="flex w-full items-center gap-2 rounded-md border border-gray-400 bg-transparent px-6 py-2"
+                        class="flex w-full items-center gap-2 rounded-md border border-gray-400 bg-transparent p-2 text-xs lg:px-6 lg:py-2 lg:text-base"
                     >
                         <Icon :name="skill.icon" size="30px" />
                         {{ skill.name }}

@@ -32,8 +32,8 @@ const projects = [
 </script>
 
 <template>
-    <div class="flex justify-center items-center">
-        <div class="grid-cols-2 gap-8 py-[2rem] pr-[2rem] pl-[5rem] hidden lg:grid">
+    <div class="flex w-full items-center justify-center">
+        <div class="hidden grid-cols-2 gap-8 py-[2rem] pr-[2rem] lg:grid lg:pl-[5rem]">
             <a
                 v-for="(project, index) in projects"
                 :key="index"
@@ -46,7 +46,9 @@ const projects = [
                     'h-fit w-fit',
                 ]"
             >
-                <div class="flex items-end justify-end pt-6 pr-4 text-2xl font-bold text-gray-700 dark:text-white">
+                <div
+                    class="flex items-end justify-end pt-6 pr-4 text-lg font-bold whitespace-nowrap text-gray-700 lg:text-2xl dark:text-white"
+                >
                     {{ project.name }}
                 </div>
                 <img
@@ -58,7 +60,7 @@ const projects = [
             </a>
         </div>
 
-        <div class="grid-cols-2 gap-8 py-[2rem] pr-[2rem] pl-[5rem] grid lg:hidden">
+        <div class="grid grid-cols-1 items-center justify-center gap-2 py-[2rem] pr-[2rem] lg:hidden lg:pl-[5rem]">
             <a
                 v-for="(project, index) in projects"
                 :key="index"
@@ -66,19 +68,17 @@ const projects = [
                 target="_blank"
                 rel="noopener noreferrer"
                 :class="[
-                    'group flex cursor-pointer flex-col gap-8 rounded-lg',
+                    'group flex cursor-pointer flex-col gap-2 rounded-lg',
                     'bg-linear-65 from-gray-300 to-orange-200 dark:from-gray-900 dark:to-gray-500',
                     'h-fit w-fit',
                 ]"
             >
-                <div class="flex items-end justify-end pt-6 pr-4 text-2xl font-bold text-gray-700 dark:text-white">
+                <div
+                    class="flex items-end justify-end pr-1 text-lg font-bold whitespace-nowrap text-gray-700 lg:text-2xl dark:text-white"
+                >
                     {{ project.name }}
                 </div>
-                <img
-                    :src="project.img"
-                    :alt="project.name"
-                    class="rounded-xl aspect-video m-4"
-                />
+                <img :src="project.img" :alt="project.name" class="m-1 aspect-video max-h-24" />
             </a>
         </div>
     </div>
