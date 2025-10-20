@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Navbar from '~/shareds/menu/NavbarIndex.vue';
-import SideBar from '~/shareds/menu/SideBar.vue';
 import TimelineResume from '~/components/TimelineResume.vue';
 
 definePageMeta({
@@ -10,8 +8,6 @@ definePageMeta({
 useHead({
     title: 'Galih Rizki Setiadi',
 });
-
-const colorMode = useColorMode();
 
 const skills = [
     {
@@ -74,37 +70,26 @@ const skills = [
 </script>
 
 <template>
-    <div class="flex h-screen items-end justify-end">
-        <div
-            class="mx-40 h-[calc(88vh)] w-full rounded-t-lg"
-            :class="[{ 'bg-white': colorMode.value === 'light' }, { 'bg-black': colorMode.value === 'dark' }]"
-        >
-            <Navbar />
-            <div class="flex h-[calc(88vh-7rem)] gap-8 pr-[5rem]">
-                <SideBar />
+    <div class="flex w-full items-center lg:pl-[10rem]">
+        <div class="flex w-full flex-col gap-16 lg:flex-row">
+            <div class="flex flex-col gap-6">
+                <h1 class="text-xl font-semibold">Career</h1>
+                <TimelineResume />
+            </div>
 
-                <div class="flex w-full items-center pl-[10rem]">
-                    <div class="flex w-full gap-16">
-                        <div class="flex flex-col gap-6">
-                            <h1 class="text-xl font-semibold">Career</h1>
-                            <TimelineResume />
-                        </div>
-                        <USeparator orientation="vertical" class="h-60" size="lg" />
+            <USeparator orientation="vertical" class="hidden h-60 lg:visible" size="lg" />
 
-                        <div class="flex flex-col gap-6">
-                            <h1 class="text-xl font-semibold">Skills</h1>
+            <div class="flex flex-col gap-6">
+                <h1 class="text-xl font-semibold">Skills</h1>
 
-                            <div class="grid grid-cols-4 gap-2">
-                                <div
-                                    v-for="(skill, index) in skills"
-                                    :key="index"
-                                    class="flex w-full items-center gap-2 rounded-md border border-gray-400 bg-transparent px-6 py-2"
-                                >
-                                    <Icon :name="skill.icon" size="30px" />
-                                    {{ skill.name }}
-                                </div>
-                            </div>
-                        </div>
+                <div class="grid grid-cols-4 gap-2">
+                    <div
+                        v-for="(skill, index) in skills"
+                        :key="index"
+                        class="flex w-full items-center gap-2 rounded-md border border-gray-400 bg-transparent px-6 py-2"
+                    >
+                        <Icon :name="skill.icon" size="30px" />
+                        {{ skill.name }}
                     </div>
                 </div>
             </div>
