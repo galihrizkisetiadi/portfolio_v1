@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-    <div class="flex items-center pr-4 lg:pr-40 lg:pl-[20rem] xl:pl-[15rem]">
+    <div class="flex items-center pr-4 lg:pr-40 pl-[5rem] lg:pl-[20rem] xl:pl-[15rem]">
         <div class="flex flex-col gap-16">
             <div class="flex w-fit flex-col gap-2 text-4xl font-bold lg:text-8xl">
                 <h1>Galih</h1>

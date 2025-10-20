@@ -8,7 +8,7 @@ const colorMode = useColorMode();
 <template>
     <div class="flex h-screen w-full items-end justify-end px-4 lg:px-40">
         <div
-            class="h-[calc(88vh)] w-full rounded-t-lg"
+            class="h-[calc(92vh)] w-full rounded-t-lg lg:h-[calc(88vh)]"
             :class="[{ 'bg-white': colorMode.value === 'light' }, { 'bg-black': colorMode.value === 'dark' }]"
         >
             <Navbar />
