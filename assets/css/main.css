@@ -12,3 +12,7 @@ body {
 .dark {
     --ui-primary: var(--color-gray-50);
 }
+
+.card-paper {
+     @apply bg-white dark:bg-black;
+}
