@@ -16,3 +16,11 @@ body {
 .card-paper {
      @apply bg-white dark:bg-black;
 }
+
+.v-popper--theme-my-theme .v-popper__inner {
+  @apply bg-white dark:bg-black;
+}
+
+.v-popper--theme-my-theme .v-popper__arrow-inner {
+  @apply bg-white dark:bg-black;
+}
