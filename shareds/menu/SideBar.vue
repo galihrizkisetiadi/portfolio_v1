@@ -27,7 +27,7 @@ const icons: Array<{ name: string; label: string; to: string }> = [
 
 <template>
     <div class="flex flex-col items-center justify-center gap-8 p-2 lg:p-9">
-        <div v-tooltip="colorMode.value === 'light' ? 'Light' : 'Dark'">
+        <div v-tooltip="colorMode.value === 'light' ? 'Dark' : 'Light'">
             <UButton
                 :color="undefined"
                 variant="ghost"
