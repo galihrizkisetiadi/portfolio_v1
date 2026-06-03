@@ -18,7 +18,7 @@ useHead({
             </div>
             <div class="flex flex-col gap-4">
                 <p class="line-clamp-3 text-sm lg:w-[25rem] lg:text-2xl">{{ $t('index.desc') }}</p>
-                <a href="/Galih Rizki Setiadi CV" download class="w-fit rounded-md border px-8 py-2 hover:bg-gray-200">CV</a>
+                <a href="/Galih Rizki Setiadi CV.pdf" download class="w-fit rounded-md border px-8 py-2 hover:bg-gray-200">CV</a>
             </div>
         </div>
     </div>
