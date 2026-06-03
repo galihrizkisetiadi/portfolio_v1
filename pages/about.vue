@@ -70,7 +70,7 @@ const skills = [
 </script>
 
 <template>
-    <div class="flex w-full items-center pr-4 lg:pl-[10rem]">
+    <div class="flex w-full items-center pr-4 lg:pl-[3rem]">
         <div class="flex w-full flex-col gap-16 lg:flex-row">
             <div class="flex flex-col gap-6">
                 <h1 class="text-xl font-semibold">{{ $t('about.career') }}</h1>

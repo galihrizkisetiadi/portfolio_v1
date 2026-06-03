@@ -13,4 +13,12 @@ export default {
         career: 'Karir',
         skills: 'Keterampilan',
     },
+    projects: {
+        sipsn: 'Sistem Informasi Manajemen Sampah Nasional',
+        lhkpn: 'Portal Laporan Kekayaan Pejabat Negara untuk transparansi.',
+        lelang: 'Portal Lelang Resmi Pemerintah untuk penawaran digital.',
+        pantonpile: 'Profil Perusahaan Kontraktor yang berspesialisasi dalam bisnis pondasi untuk tiang bangunan.',
+        teramedik: 'Sistem Informasi Rumah Sakit (SIG) Komprehensif.',
+        sdp: 'Sistem Database Pemasyarakatan',
+    },
 };

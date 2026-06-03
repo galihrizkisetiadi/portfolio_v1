@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
+@import 'floating-vue/dist/style.css';
 
 body {
     @apply bg-[#e2e0df] text-gray-600 dark:bg-[#7d7272] dark:text-white;
@@ -17,10 +18,10 @@ body {
      @apply bg-white dark:bg-black;
 }
 
-.v-popper--theme-my-theme .v-popper__inner {
-  @apply bg-white dark:bg-black;
+.v-popper__inner {
+  @apply dark:!bg-white;
 }
 
-.v-popper--theme-my-theme .v-popper__arrow-inner {
-  @apply bg-white dark:bg-black;
+.v-popper__arrow-inner {
+  @apply dark:!bg-white;
 }

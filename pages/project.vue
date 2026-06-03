@@ -7,33 +7,45 @@ useHead({
     title: 'Galih Rizki Setiadi',
 });
 
-const projects = [
+const { t } = useI18n();
+
+const projects = computed(() => [
     {
-        name: 'E-LHKPN',
-        img: '/lhkpn.png',
-        url: 'https://frontend.elhkpn.devel.torche-indonesia.com',
-    },
-    {
-        name: 'SDP',
-        img: '/sdp.jpg',
-        url: 'https://frontend.elhkpn.devel.torche-indonesia.com',
+        name: 'SIPSN',
+        url: 'https://sampahnasional.kemenlh.go.id/portal-indikatif/',
+        text: t('projects.sipsn'),
     },
     {
         name: 'Pantonpile',
-        img: '/pantonpile.png',
         url: 'https://pantonpile.net',
+        text: t('projects.pantonpile'),
     },
     {
         name: 'Portal Lelang',
-        img: '/lelang.png',
         url: 'https://lelang.go.id',
+        text: t('projects.lelang'),
     },
-];
+    {
+        name: 'Teramedik',
+        url: 'https://www.teramedik.com/id',
+        text: t('projects.teramedik'),
+    },
+    {
+        name: 'E-LHKPN',
+        url: 'https://frontend.elhkpn.devel.torche-indonesia.com',
+        text: t('projects.lhkpn'),
+    },
+    {
+        name: 'SDP',
+        url: 'https://frontend.elhkpn.devel.torche-indonesia.com',
+        text: t('projects.sdp'),
+    },
+]);
 </script>
 
 <template>
     <div class="flex w-full items-center justify-center">
-        <div class="hidden grid-cols-2 gap-8 py-[2rem] pr-[2rem] lg:grid lg:pl-[5rem]">
+        <div class="grid w-fit grid-cols-1 gap-4 p-10 lg:grid-cols-2">
             <a
                 v-for="(project, index) in projects"
                 :key="index"
@@ -41,44 +53,19 @@ const projects = [
                 target="_blank"
                 rel="noopener noreferrer"
                 :class="[
-                    'group flex cursor-pointer flex-col gap-8 rounded-lg',
-                    'bg-linear-65 from-gray-300 to-orange-200 dark:from-gray-900 dark:to-gray-500',
-                    'h-fit w-fit',
+                    'flex h-full flex-col gap-4 rounded-lg border border-gray-400 px-4 py-6',
+                    'hover:bg-gray-100',
+                    'dark:hover:bg-gray-900',
                 ]"
             >
-                <div
-                    class="flex items-end justify-end pt-6 pr-4 text-lg font-bold whitespace-nowrap text-gray-700 lg:text-2xl dark:text-white"
-                >
-                    {{ project.name }}
+                <div class="flex items-center justify-between font-bold">
+                    <span>{{ project.name }}</span>
+                    <Icon name="cuida:open-in-new-tab-outline" size="20px" />
                 </div>
-                <img
-                    :src="project.img"
-                    :alt="project.name"
-                    class="ml-[8rem] aspect-video rounded-xl group-hover:ml-0 hover:ml-0"
-                    style="transition: margin-left 1s"
-                />
-            </a>
-        </div>
 
-        <div class="grid grid-cols-1 items-center justify-center gap-2 py-[2rem] pr-[2rem] lg:hidden lg:pl-[5rem]">
-            <a
-                v-for="(project, index) in projects"
-                :key="index"
-                :href="project.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                :class="[
-                    'group flex cursor-pointer flex-col gap-2 rounded-lg',
-                    'bg-linear-65 from-gray-300 to-orange-200 dark:from-gray-900 dark:to-gray-500',
-                    'h-fit w-fit',
-                ]"
-            >
-                <div
-                    class="flex items-end justify-end pr-1 text-lg font-bold whitespace-nowrap text-gray-700 lg:text-2xl dark:text-white"
-                >
-                    {{ project.name }}
+                <div class="text-gray-400 dark:text-gray-300">
+                    {{ project.text }}
                 </div>
-                <img :src="project.img" :alt="project.name" class="m-1 aspect-video max-h-24" />
             </a>
         </div>
     </div>

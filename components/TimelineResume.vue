@@ -14,7 +14,12 @@ const items = ref<StepperItem[]>([
     },
     {
         title: 'CV. Torche Indonesia',
-        description: 'Work, May 2023 - May 2025',
+        description: 'Work, May 2023 - Sep 2025',
+        icon: 'material-symbols:work',
+    },
+    {
+        title: 'PT. Terakorp Indonesia',
+        description: 'Work, Oct 2025 - now',
         icon: 'material-symbols:work',
     },
 ]);

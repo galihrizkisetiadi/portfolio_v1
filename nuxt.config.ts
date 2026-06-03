@@ -3,6 +3,11 @@
 import { defineNuxtConfig } from 'nuxt/config';
 import tailwindcss from '@tailwindcss/vite';
 
+import Aura from '@primeuix/themes/aura';
+import {
+    Drawer,
+} from 'primevue';
+
 export default defineNuxtConfig({
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
@@ -15,7 +20,7 @@ export default defineNuxtConfig({
     devServer: {
         port: 6161,
     },
-    modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/ui', '@nuxtjs/color-mode', 'floating-vue/nuxt'],
+    modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/ui', '@nuxtjs/color-mode', 'floating-vue/nuxt', '@primevue/nuxt-module'],
     i18n: {
         vueI18n: '../i18n.config.ts', // if you are using custom path, default
     },
@@ -28,4 +33,19 @@ export default defineNuxtConfig({
         plugins: [tailwindcss()],
     },
     compatibilityDate: '2025-05-14',
+    primevue: {
+        autoImport: false,
+        components: {
+            include: [Drawer],
+        },
+        options: {
+            theme: {
+                preset: Aura,
+                options: {
+                    darkModeSelector: false,
+                },
+            },
+            
+        },
+    },
 });
